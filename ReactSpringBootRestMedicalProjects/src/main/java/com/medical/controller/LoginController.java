@@ -25,7 +25,7 @@ public class LoginController {
 		 if(userName.equals("mahesh") && password.equals("12345")) {
 			 return new ResponseEntity<String>("suceessfully login",HttpStatus.OK);
 		 } else {
-			 return new ResponseEntity<String>("login failed",HttpStatus.INTERNAL_SERVER_ERROR); 
+			 return new ResponseEntity<String>("login failed",HttpStatus.NO_CONTENT); 
 		 }
     }
 }
