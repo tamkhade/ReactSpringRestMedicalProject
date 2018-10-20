@@ -1,14 +1,17 @@
-package com.medical.config;
+package com.medical;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication
-@ComponentScan("com")
+import com.medical.service.LoginService;
+
+@SpringBootApplication()
 public class ReactSpringBootRestMedicalProjectsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ReactSpringBootRestMedicalProjectsApplication.class, args);
 	}
+	
 }
